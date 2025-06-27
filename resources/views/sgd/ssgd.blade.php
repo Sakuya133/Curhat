@@ -87,7 +87,7 @@
                 <div class="card-content">
                         <h3 class="card-title">Judul Grup Diskusi</h3>
                         <p class="card-text">Topik yang Dibicarakan di Grup Diskusi</p>
-                        <button class="join-button">
+                        <button class="join-button"  onclick="joinGroup('1')">
                         Bergabung <span>➔</span>
                         </button>
             </div>

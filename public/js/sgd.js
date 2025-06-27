@@ -62,6 +62,14 @@ const mockGroups = [
         memberCount: 9,
     },
 ];
+const groupLinks = {
+    1: "https://discord.gg/wmRtwVDYDB",
+    // grup lain jika ada
+};
+
+
+   
+
 
 // Function to fetch groups from API
 async function fetchGroups() {
@@ -166,7 +174,12 @@ async function loadGroups() {
 // Function to handle joining a group
 function joinGroup(groupId) {
     // In a real app, you would make an API call here
-    alert(`Joining group with ID: ${groupId}`);
+    if (groupLinks[groupId]) {
+        window.open(groupLinks[groupId], "_blank");
+    } else {
+        alert(`Joining group with ID: ${groupId}`);
+    }
+   
 
     // Example of how you might handle this in a real app:
     // fetch(`${API_URL}/${groupId}/join`, {
