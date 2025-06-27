@@ -6,7 +6,7 @@ use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\QuoteController;
 use App\Http\Controllers\SgdController;
-
+use App\Http\Controllers\MentalTestController;
 
 Route::get('/', function () {
     return view('auth.login');
@@ -22,7 +22,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/support-group-discussion', [SgdController::class, 'show'])->name('sgd');
+    Route::get('/mental-health-test', [MentalTestController::class, 'index'])->name('mental.test');
+    Route::POST('/mental-health-test/submit', [MentalTestController::class, 'submit'])->name('mental-test.submit');
 });
+
+
+
 
 require __DIR__.'/auth.php';
 

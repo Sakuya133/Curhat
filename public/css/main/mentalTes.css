@@ -1,0 +1,79 @@
+/* .latar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F1EDE7;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+} */
+
+.layout {
+    width: 750px;
+    height: 720px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #bd0808;
+
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* opsional agar kelihatan mengambang */
+}
+
+.maskot {
+    margin-top: 40px;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f4ec; /* warna latar belakang */
+    padding: 40px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #fdfcf9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .sun-illustration {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  
+  .form-box {
+    flex: 2;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+
