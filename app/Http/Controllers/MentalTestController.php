@@ -31,7 +31,7 @@ class MentalTestController extends Controller
 
     if ($totalScore < 27) {
         $category = 'Rendah';
-        $description = 'Skor Anda menunjukkan bahwa tingkat stres atau tekanan mental Anda tergolong rendah. Terus jaga kesehatan mental Anda!';
+        $description = 'Kesehatan mental anda hari ini memberikan hasil yang mengkhawatirkan. Beberapa kegiatan yang kami sarankan';
         $recommendations = [
             "Kembali kepada rutinitas semula. Sempatkan 1 hari untuk melakukan rutinitas tanpa adanya gangguan.",
             "Bersosialisasi yang tidak intense. Bersosialisasilah dengan teman atau keluargamu yang tidak memakan banyak tenaga.",
@@ -51,7 +51,7 @@ class MentalTestController extends Controller
         ];
     } else {
         $category = 'Tinggi';
-        $description = 'Skor Anda menunjukkan tingkat stres tinggi. Pertimbangkan untuk berbicara dengan profesional atau mencari bantuan segera.';
+        $description = 'Kesehatan mental anda tinggi dan terjaga, tetap pertahankan hasil ini dengan melakukan beberapa aktivitas rekomendasi kami!';
         $recommendations = [
             "Give back. Cobalah kegiatan sukarela atau jadilah mentor.",
             "Creative expression. Cobalah berkecimpung ke dalam dunia kreatif.",
